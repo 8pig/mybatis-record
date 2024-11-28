@@ -8,14 +8,16 @@
         <transactionManager type="JDBC"/>
         <dataSource type="POOLED">
             <property name="driver" value="com.mysql.jdbc.Driver"/>
-            <property name="url" value="jdbc:mysql://152.136.169.90:3306/mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"/>
+<!--            <property name="url" value="jdbc:mysql://152.136.169.90:3306/mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"/>-->
+            <property name="url" value="jdbc:mysql://localhost:3310/mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"/>
             <property name="username" value="root"/>
-            <property name="password" value="root"/>
+            <property name="password" value="123123"/>
         </dataSource>
     </environment>
 </environments>
 <mappers>
-    <mapper resource="mappers/UserMapper.xml"/>
+<!--    <mapper resource="mappers/UserMapper.xml"/>-->
+    <package name="com.atguigu.mybatis.mapper"/>
 </mappers>
 
 </configuration>
